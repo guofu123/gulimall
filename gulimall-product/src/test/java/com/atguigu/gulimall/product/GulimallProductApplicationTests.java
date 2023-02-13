@@ -17,10 +17,10 @@ class GulimallProductApplicationTests {
 
     @Test
     void contextLoads() {
-        AttrEntity entity = new AttrEntity();
-        entity.setAttrName("计算机");
-        attrService.save(entity);
-        System.out.println("执行成功");
+//        AttrEntity entity = new AttrEntity();
+//        entity.setAttrName("计算机");
+//        attrService.save(entity);
+//        System.out.println("执行成功");
     }
 
 }
