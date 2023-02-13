@@ -1,4 +1,4 @@
-package com.atguigu.gulimall.ware;
+package com.atguigu.gulimall.member;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -6,11 +6,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
-@MapperScan("com.atguigu.gulimall.ware.dao")
+@MapperScan("com.atguigu.gulimall.member.dao")
 @SpringBootApplication
-public class GulimallWareApplication {
+public class GulimailMemberApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GulimallWareApplication.class, args);
+        SpringApplication.run(GulimailMemberApplication.class, args);
     }
+
 }
