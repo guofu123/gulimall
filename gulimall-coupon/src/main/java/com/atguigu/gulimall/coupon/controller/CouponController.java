@@ -32,6 +32,18 @@ public class CouponController {
     private CouponService couponService;
 
     /**
+     * test openfeign
+     * @return
+     */
+    @RequestMapping("/member/coupon")
+    public R memberCoupon(){
+        CouponEntity coupon = new CouponEntity();
+        coupon.setId(1L);
+        coupon.setCouponName("满一百减十");
+        return R.ok("请求成功").put("coupon", Arrays.asList(coupon));
+    }
+
+    /**
      * 列表
      */
     @RequestMapping("/list")
