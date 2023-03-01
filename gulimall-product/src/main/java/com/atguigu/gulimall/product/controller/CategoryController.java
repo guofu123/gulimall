@@ -1,6 +1,7 @@
 package com.atguigu.gulimall.product.controller;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
@@ -30,6 +31,14 @@ import com.atguigu.common.utils.R;
 public class CategoryController {
     @Autowired
     private CategoryService categoryService;
+
+
+    @RequestMapping("/list/tree")
+    public R treeList(){
+        List<CategoryEntity> categoryMenu = categoryService.getCategoryMenu();
+        return R.ok().put("categoryMenu", categoryMenu);
+    }
+
 
     /**
      * 列表
